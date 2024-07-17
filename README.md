@@ -5,13 +5,13 @@ This project was supervised by Ralph Koning (UvA/SIDN Labs) and Moritz Müller (
 
 
 ### Abstract from the report
-This report analyses the impact of BGPsec on BGP update messages. BGPsec is an extension to traditional BGP that aims to improve routing security by allowing BGP 
+*This report analyses the impact of BGPsec on BGP update messages. BGPsec is an extension to traditional BGP that aims to improve routing security by allowing BGP 
 speakers to sign and validate AS paths. We make use of BGP data streams from two BGP speakers and evaluate how different identified types of BGP update messages 
 are affected by the changes required by BGPsec. In addition to the lack of support for update packing, these changes include the need to tailor each update message 
 to the receiving peer by adding its AS number to the path. We model BGPsec traffic based on these requirements. We analyse the impact of BGPsec on the generation of 
 update messages and conclude that the increased number of messages is likely to significantly increase the computational load on routers running BGP, even without 
 considering the computational cost of signing. However, we find that the average number of prefixes advertised per update message is lower than the ones determined 
-in previous work, which may indicate a lower than expected impact of BGPsec on BGP traffic.
+in previous work, which may indicate a lower than expected impact of BGPsec on BGP traffic.*
 
 ### Overview of workflow
 ![workflow from pcap to analysis](workflow.png "")
@@ -33,9 +33,9 @@ Several BGP messages included in one frame can be separated using the ``individu
 
 
 ### Elasticsearch and Kibana
-The prepared JSON lines files can be imported to Elasticsearch with for example logstash. An example pipeline configuration can be found in ``logstash_example.conf``.
+The prepared JSON lines files can be imported to Elasticsearch with for example logstash. An example pipeline configuration can be found in the ELK folder (``logstash_example.conf``).
 
-**TODO: Dashboards**
+This folder also includes a Kibana dashboard to easily start analysing and visualising the imported data. It can be imported into Kibana through Stack Management > Saved Objects > Import. 
 
 
 ### Message generation analysis
