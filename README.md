@@ -14,7 +14,7 @@ considering the computational cost of signing. However, we find that the average
 in previous work, which may indicate a lower than expected impact of BGPsec on BGP traffic.
 
 ### Overview of workflow
-![workflow from pcap to analysis](workflow.png "")
+<img src="https://github.com/lmbruder/bgpsec_update_messages/blob/main/workflow.png" width=85%/>
 ### Filter and transform
 Transform and filter all pcaps in a folder.
 
