@@ -1,5 +1,4 @@
 import json
-from jsondiff import diff
 import os
 
 class Analyse:
