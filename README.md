@@ -15,6 +15,7 @@ in previous work, which may indicate a lower than expected impact of BGPsec on B
 
 ### Overview of workflow
 <img src="https://github.com/lmbruder/bgpsec_update_messages/blob/main/workflow.png" width=85%/>
+
 ### Filter and transform
 Transform and filter all pcaps in a folder.
 
